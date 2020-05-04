@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Language Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../custom.css">
+
+
+    <title>Brett McGrath - Blog</title>
+  </head>
+
+
+  <body>
+  <section id="first-content">
+
+
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Brett McGrath</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../blog.html">Blog<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../contact_me.html">Contact me</a>
+          </li>
+            </div>
+        </ul>
+      </div>
+
+      
+    </nav>
+
+
+  </section>
+  
+  <div id="secondary-text">
+    
+
+
+
+    
+    <h4>Running in circles</h4><br>
+    <h6>February 18, 2020</h6><br>
+    
+    <p>I have spent a few hours now looking at code and not actually writing much new. As mentioned previously, I realized that my game was getting fairly long for one file and that I should break it up into smaller sections as is best practice. I really thought this was going to be easier than it was, but a few hours later I haven’t managed to break it up much at all! Breaking it up initially presented with lots of problems untangling a spaghetti of classes, functions and variables I tried to import from one file to the next. This was the first time I had ever attempted doing this, and I thought it would be as simple as importing math, sys, random, or any other Python library. I was in for a surprise!</p>
+    
+    <p>ImportError: cannot import name ‘Ship’ from partially initialized module 'cargo' (most likely due to a circular import)</p>
+    
+    <p>This error message really puzzled me and had me searching through articles, Stack Overflow posts, and YouTube videos. Up until now, I really had no clue that circular dependencies were a bad thing. In my novice programmer brain, it seems reasonable to believe that I can send variables to one file and then back again so as to keep some sort of continuation. I am beginning to see how it can cause problems: the hard part is rewriting what has already been written to address this.</p>
+    
+    <p>If you are reading this and haven’t yet experienced what I am talking about, this article seemed to help best in understanding the problems I had created for myself:</p>
+    
+    <p>https://stackabuse.com/python-circular-imports/</p>
+    
+    <p>I was able to break up my code into a few new files, but the majority remains as part of the main file it has always been a part of (pirate.py). Earlier today I had intended to break up most of the functions that make up the main menu of the game and its parts, to date that hasn’t been possible and may not even be necessary. Pirate.py is now 75 lines leaner than it was yesterday with the addition of 3 new files: cargo.py, ships.py, and character.py, each containing important classes pertaining to game function. I haven’t made as much progress today in terms of adding new game features, but I have started an important process in optimizing what I have written so far, cleaning it up, and hopefully making it easier on myself in the future. I have run around in circles learning about running around in circles, but today I have learned important lessons I won’t forget.</p>
+    
+    <p>I’m really beginning to see and feel what John Ousterhout talks about in his book A Philosophy of Software Design. As I continue forward I want to remain mindful of overall design, keep an eye on dependencies, strive to write strategically instead of tactically, and take the time to make things easier on myself in the long-run.</p>
+
+  
+     
+  </div>
+
+  <section class="main-content"> 
+
+ 
+
+
+
+
+</div>
+
+
+
+</section>
+
+  
+<footer id="sticky-footer" class="py-2 text-white-50">
+
+  <a class="icon" href="https://www.linkedin.com/in/brett-mcgrath-8197ba6b/" target="_blank"><span class="fa fa-linkedin"></span></a>
+  <a class="icon" href="https://github.com/brettmcgrath" target="_blank"><span class="fa fa-github"></span></a>
+<small>There is absolutely nothing on this site copyrighted. Feel free to visit my GitHub and use anything I have created.</small>
+
+</footer>
+  
+</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
