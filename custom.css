@@ -56,9 +56,21 @@ footer {
   background-color: #274467;
 }
 
+.main-content-blog {
+  background-color: #274467;
+  padding-bottom: 26%;
+}
+
 .main-content-about {
   background-color: #274467;
   padding-bottom: 1.5%;
+}
+
+.main-content-contact-me {
+  background-color: #FAF8E0;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 87%;
 }
 
 .secondary-content {
@@ -67,6 +79,17 @@ footer {
   padding-bottom: 4%;
 }
 
+.secondary-content-projects {
+  background-color: #274467;
+  padding-top: 1.5%;
+  padding-bottom: 24%;
+}
+
+.secondary-content-about {
+  background-color: #274467;
+  padding-top: 1.5%;
+  padding-bottom: 23%;
+}
 
 /* may take this out */
 #header-img {
@@ -206,11 +229,19 @@ footer {
   padding-top: 1.5%;
 }
 
-#secondary-text {
+#secondary-text-index {
   padding-left: 1%;
   padding-right: 2%;
   padding-top: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 25%;
+  background-color: #FAF8E0;
+}
+
+#secondary-text-blog {
+  padding-left: 1%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #FAF8E0;
 }
 
@@ -219,6 +250,14 @@ footer {
   padding-right: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
+  background-color: #FAF8E0;
+}
+
+#blog-text {
+  padding-left: 1%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 30%;
   background-color: #FAF8E0;
 }
 
