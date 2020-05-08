@@ -1,0 +1,1 @@
+document.write('<a class="icon" href="https://www.linkedin.com/in/brett-a-mcgrath/" target="_blank"><span class="fa fa-linkedin"></span></a><a class="icon" href="https://github.com/brettmcgrath" target="_blank"><span class="fa fa-github"></span></a><br><small>Absolutely nothing on this site is copyrighted. Copy at will.</small>')
